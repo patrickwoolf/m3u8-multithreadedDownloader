@@ -1,3 +1,4 @@
+# m3u8 multithreaded video streaming hls downloader
 m3u8 是一種基於 HTTP Live Streaming 檔案影片格式，它主要是存放整個影片的基本資訊和分片(Segment)組成。
 
 相信大家都看過m3u8格式檔案的內容，我們直來對比一下有什麼不同，然後教大家怎麼用python多程序實現下載並且合併。
