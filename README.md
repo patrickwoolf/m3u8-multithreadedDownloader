@@ -4,17 +4,24 @@ m3u8 是一種基於 HTTP Live Streaming 檔案影片格式，它主要是存放
 
 # 一、兩者不同
 - 非加密 的m3u8檔案
-- ![](https://p1-tt-ipv6.byteimg.com/large/pgc-image/45d6271f2d524cbc8aa278da85562bab)
+![](https://p1-tt-ipv6.byteimg.com/large/pgc-image/45d6271f2d524cbc8aa278da85562bab)
 - 加密 的m3u8檔案
-- ![](https://p1-tt-ipv6.byteimg.com/large/pgc-image/b0b2cb0e595c4fd5acb0163820307f86)
+![](https://p1-tt-ipv6.byteimg.com/large/pgc-image/b0b2cb0e595c4fd5acb0163820307f86)
+
 相信眼尖的小夥伴已經看出了2個內容的不同之處，對的，其實區別就在加密檔案的第 5 行的 #EXT-X-KEY 的資訊
 這個資訊就是用來影片內容解密的，其實裡面的內容大多是一段字串，其實也就是解密時候的KEY值
 那麼這個怎麼去解密呢，我們暫時不管，我們先來解釋一下每行的意思
+
 第一行: #EXTM3U 宣告這是一個m3u8的檔案
+
 第二行: #EXT-X-VERSION 協議的版本號
+
 第三行: #EXT-X-MEDIA-SEQUENCE 每一個media URI 在 PlayList中只有唯一的序號，相鄰之間序號+1
+
 第四行: #EXT-X-KEY 記錄了加密的方式，一般是AES-128以及加密的KEY資訊
+
 第五行: #EXTINF 表示這段影片碎片的持續時間有多久
+
 第六行: sA3LRa6g.ts 影片片段的名稱，獲取的時候需要拼接上域名，找到檔案的正確的路徑
 
 # 二、爬蟲內容詳解
