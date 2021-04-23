@@ -4,8 +4,10 @@ m3u8 是一種基於 HTTP Live Streaming 檔案影片格式，它主要是存放
 
 # 一、兩者不同
 - 非加密 的m3u8檔案
+
     ![](https://p1-tt-ipv6.byteimg.com/large/pgc-image/45d6271f2d524cbc8aa278da85562bab)
 - 加密 的m3u8檔案
+    
     ![](https://p1-tt-ipv6.byteimg.com/large/pgc-image/b0b2cb0e595c4fd5acb0163820307f86)
 
 相信眼尖的小夥伴已經看出了2個內容的不同之處，對的，其實區別就在加密檔案的第 5 行的 #EXT-X-KEY 的資訊
